@@ -1,6 +1,8 @@
 //Llamar al objeto en el HTML
-const buttonCart = document.getElementsByClassName("addCart");
-buttonCart.addEventListener("click");
+let buttonCart = document.getElementsByClassName('addCart');
+
+
+contar.addEventListener("click",contar())
 
 //Variable para almacenar la cuenta
 let contador = 0;

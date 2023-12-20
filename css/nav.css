@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,300&display=swap");
 
+/* Cambiando la tipografia a toda la página */
 * {
   font-family: "nunito", sans-serif;
 }
 
+/* Creando un bloque que contiene un texto */
 .promo {
   background-color: #efefef;
   height: 100px;
@@ -12,20 +14,24 @@
   align-items: center;
 }
 
+/* Mostrando categorias de los productos */
 .categorias {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
+/* Estilizando la posicion de los titulos de las categorias */
 .tituloCategorias {
   text-align: center;
 }
 
+/* Añadiendo animacion a los elementos sobre los que se pasa el cursor */
 li:hover {
   text-decoration: underline;
 }
 
+/* Estilizando los titulos */
 h2 {
   margin: 30px 0px;
   font-weight: bold;
@@ -38,17 +44,22 @@ h3 {
   text-decoration: underline #90a28c;
 }
 
+/* Cambiando el color  y el tamaño del carrito y los favoritos */
 a {
   color: black;
 }
+
 svg {
   height: 20px;
 }
 
+/* Agregando margen a los titulos para que la navegacion no los tape al hacer scroll */
 .espacio {
   width: 100%;
   height: 35px;
 }
+
+/* Creando y estilizando grid para los productos */
 .cat-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -64,9 +75,31 @@ svg {
   justify-items: center;
 }
 
+/* Separar las cards de los titulos y otros productos */
 .margin-card {
   margin: 20px 0px;
 }
+
+/* Estilizando las cartas para que se vean bonitas */
+.carta-1 {
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.carta-1:hover {
+  box-shadow: 0px 0px 30px 10px rgba(255, 0, 230, 0.3);
+}
+
+.carta-2 {
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.carta-2:hover {
+  box-shadow: 0px 0px 30px 10px rgba(64, 138, 95, 0.51);
+}
+
+/* Breakpoints responsive */
 
 @media (max-width: 1024px) {
   .cat-1 {
@@ -119,20 +152,3 @@ svg {
   }
 }
 
-.carta-1 {
-  border-radius: 20px;
-  transition: all 0.3s;
-}
-
-.carta-1:hover {
-  box-shadow: 0px 0px 30px 10px rgba(255, 0, 230, 0.3);
-}
-
-.carta-2 {
-  border-radius: 20px;
-  transition: all 0.3s;
-}
-
-.carta-2:hover {
-  box-shadow: 0px 0px 30px 10px rgba(64, 138, 95, 0.51);
-}
