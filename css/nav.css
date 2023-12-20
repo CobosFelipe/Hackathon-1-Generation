@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,300&display=swap');
+
+*{
+    font-family: 'nunito', sans-serif;
+}
+
+.promo{
+    background-color: #efefef;
+    height: 100px;   
+}
+
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tituloCategorias{
+    text-align: center;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+h2{
+    margin: 30px 0px;
+}
+
+h3{
+    padding-top: 30px;
+}
+
+a{
+    color: black;
+}
+svg{
+    height: 20px;
+}
+
+.espacio{
+    width: 100%;
+    height: 35px;
+}
+.cat-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    background-color: #cadaf7;
+}
+
+.cat-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+}
+
+.margin-card{
+    margin: 20px 0px;
+}
+
+@media (max-width:1024px) {
+    .cat-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .cat-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    .cat-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .cat-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media (max-width:600px) {
+    .cat-1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .cat-2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .margin-card{
+        margin: 10px 0px;
+    }
+}
