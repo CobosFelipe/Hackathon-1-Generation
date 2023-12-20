@@ -1,113 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,300&display=swap");
 
-*{
-    font-family: 'nunito', sans-serif;
-}
-
-.promo{
-    background-color: #efefef;
-    height: 100px;   
+* {
+  font-family: "nunito", sans-serif;
 }
 
-.categorias{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.promo {
+  background-color: #efefef;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.tituloCategorias{
-    text-align: center;
+.categorias {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-li:hover{
-    text-decoration: underline;
+.tituloCategorias {
+  text-align: center;
 }
 
-h2{
-    margin: 30px 0px;
+li:hover {
+  text-decoration: underline;
 }
 
-h3{
-    padding-top: 30px;
+h2 {
+  margin: 30px 0px;
+  font-weight: bold;
+  text-decoration: underline #90a28c;
 }
 
-a{
-    color: black;
-}
-svg{
-    height: 20px;
+h3 {
+  padding-top: 30px;
+  font-weight: bold;
+  text-decoration: underline #90a28c;
 }
 
-.espacio{
-    width: 100%;
-    height: 35px;
+a {
+  color: black;
 }
-.cat-1{
+svg {
+  height: 20px;
+}
+
+.espacio {
+  width: 100%;
+  height: 35px;
+}
+.cat-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  background-color: #cadaf7;
+}
+
+.cat-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+}
+
+.margin-card {
+  margin: 20px 0px;
+}
+
+@media (max-width: 1024px) {
+  .cat-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
-    background-color: #cadaf7;
-}
+  }
 
-.cat-2{
+  .cat-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
+  }
 }
 
-.margin-card{
-    margin: 20px 0px;
+@media (max-width: 768px) {
+  .cat-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .cat-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
 }
 
-@media (max-width:1024px) {
-    .cat-1{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: center;
-    }
-    
-    .cat-2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: center;
-    }
+@media (max-width: 600px) {
+  .cat-1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .cat-2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .margin-card {
+    margin: 10px 0px;
+  }
 }
 
-@media (max-width:768px) {
-    .cat-1{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-    }
-    .cat-2{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-    }
+.carta-1 {
+  border-radius: 20px;
+  transition: all 0.3s;
 }
 
-@media (max-width:600px) {
-    .cat-1{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        justify-items: center;
-    }
+.carta-1:hover {
+  box-shadow: 0px 0px 30px 10px rgba(255, 0, 230, 0.3);
+}
 
-    .cat-2{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        justify-items: center;
-    }
+.carta-2 {
+  border-radius: 20px;
+  transition: all 0.3s;
+}
 
-    .margin-card{
-        margin: 10px 0px;
-    }
+.carta-2:hover {
+  box-shadow: 0px 0px 30px 10px rgba(64, 138, 95, 0.51);
 }
